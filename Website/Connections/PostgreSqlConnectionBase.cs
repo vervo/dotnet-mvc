@@ -5,7 +5,7 @@ using Npgsql;
 
 namespace Website.Connections
 {
-    public abstract class BaseConnection
+    public abstract class PostgreSqlConnectionBase
     {
         public abstract IDbConnection Open();
 

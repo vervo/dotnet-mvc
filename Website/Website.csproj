@@ -165,10 +165,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Connections\BaseConnection.cs" />
+    <Compile Include="Connections\PostgreSqlConnectionBase.cs" />
     <Compile Include="Connections\MyDbConnection.cs" />
+    <Compile Include="Connections\SqlConnectionBase.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Data\Entities\Users.cs" />
+    <Compile Include="Controllers\Data\Entities\Users.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

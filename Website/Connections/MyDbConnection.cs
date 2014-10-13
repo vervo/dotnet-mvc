@@ -2,11 +2,11 @@
 
 namespace Website.Connections
 {
-    public class MyDbConnection : BaseConnection
+    public class MyDbConnection : SqlConnectionBase
     {
         public override IDbConnection Open()
         {
-            return OpenDatabase("MyDb");
+            return OpenDatabase("MyDbConnection");
         }
     }
 }
