@@ -1,0 +1,32 @@
+﻿@model Website.Models.IndexViewModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<p>Hi there: @Model.Name</p>
+
+<table border="1">
+    <tr>
+        <td>PersonId</td>
+        <td>LastName</td>
+        <td>FirstName</td>
+        <td>Adress</td>
+        <td>City</td>
+    </tr>
+    @foreach (var user in Model.Users)
+    {
+        <tr>
+            <td>@user.PersonId</td>
+            <td>@user.LastName</td>
+            <td>@user.FirstName</td>
+            <td>@user.Address</td>
+            <td>@user.City</td>
+        </tr>
+    }
+    @if (Model.Users.Count == 0)
+    {
+        <tr><td colspan="5" style="text-align: center">No users!</td></tr>
+    }
+</table>
