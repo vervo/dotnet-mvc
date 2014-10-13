@@ -6,6 +6,7 @@ using Dapper;
 using Website.Connections;
 using Website.Data.Entities;
 using Website.Models;
+using Website.Models.Home;
 
 namespace Website.Controllers
 {

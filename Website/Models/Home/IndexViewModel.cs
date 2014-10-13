@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
-using System.Web.UI.WebControls.Expressions;
 using Website.Data.Entities;
 
-namespace Website.Models
+namespace Website.Models.Home
 {
     public class IndexViewModel
     {
